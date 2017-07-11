@@ -7,12 +7,7 @@ html {
 
 .center {
     display: flex;
-    text-align: center;
-}
-
-.hard-center {
-    display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .flex-left {
