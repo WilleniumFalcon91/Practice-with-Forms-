@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheets/main.css">
     <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <title>Superhero Application</title>
 </head>
@@ -11,65 +12,72 @@
     <div class="container">
         <div class="row">
             <div class="center">
-                <div class="col-md-12">
+                <div class="col-xs-12">
                     <h1>Superhero Application</h1>
                 </div>
-                <form class="form-horizontal" action="http://localhost:5000" enctype="multipart/form-data" method="GET"> 
-                    <div class="form group">
+            </div>
+            <form class="form-horizontal" action="http://localhost:5000" enctype="multipart/form-data" method="GET"> 
+                <div class="form group">
+                    <div class="col-xs-6 flex-left">
                         <label>Name
                         <input type="text" class="form-control" name="name">
                         </label>
                     </div>
-                    <div class="form group">
+                </div>
+                <div class="form group">
+                    <div class="col-xs-6 flex-left">
                         <label>Age
                         <input type="number" class="form-control" name="age">
                         </label>
                     </div>
-                    <br>
-                    <label>Superhero Powers - check all that apply:
-                    <br>
-                        <label class="checkbox-inline">
-                            <input type="checkbox" name="Lightening Speed" value="Fast">Lightening Speed 
-                        </label> 
-                        <label class="checkbox-inline">  
-                            <input type="checkbox" name="Superhuman Strength" value="Strong">Superhuman Strength 
-                        </label> 
-                        <label class="checkbox-inline">  
-                            <input type="checkbox" name="Ability to fly" value="Flight">Ability to Fly 
-                        </label>
-                        <label class="checkbox-inline">    
-                            <input type="checkbox" name="Heat Vision" value="Lasers">Heat Vision 
-                        </label> 
-                        <label class="checkbox-inline">  
-                            <input type="checkbox" name="Invisibility" value="Able to be invisibile">Invisibility  
-                        </label>
-                        <label class="checkbox-inline">   
-                            <input type="checkbox" name="Teleportation" value="Knows Teleportation">Teleportation 
-                        </label>
+                </div>
+                <br>
+                <br>
+                <label>Superhero Powers - check all that apply:
+                <br>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" name="Lightening Speed" value="Fast">Lightening Speed 
+                    </label> 
+                    <label class="checkbox-inline">  
+                        <input type="checkbox" name="Superhuman Strength" value="Strong">Superhuman Strength 
+                    </label> 
+                    <label class="checkbox-inline">  
+                        <input type="checkbox" name="Ability to fly" value="Flight">Ability to Fly 
                     </label>
-                    <br>
-                    <br>
-                    <label>Cape size
-                        <select class="form-control" name="cape size">
-                            <option>Small</option>
-                            <option>Medium</option>
-                            <option>Large</option>
-                            <option>Super-Large</option>
-                        </select>
+                    <label class="checkbox-inline">    
+                        <input type="checkbox" name="Heat Vision" value="Lasers">Heat Vision 
+                    </label> 
+                    <label class="checkbox-inline">  
+                        <input type="checkbox" name="Invisibility" value="Able to be invisibile">Invisibility  
                     </label>
-                    <br>
-                    <br>
-                    <label>Operating System Choice
-                        <select class="form-control" name="OS of choice">
-                            <option>MAC</option>
-                            <option>LINUX</option>
-                            <option>WINDOWS</option>
-                        </select>
+                    <label class="checkbox-inline">   
+                        <input type="checkbox" name="Teleportation" value="Knows Teleportation">Teleportation 
                     </label>
-                    <br>
-                    <br>
-                    <label>Programming Languages  - check all that you know:  
-                    <br>
+                </label>
+                <br>
+                <br>
+                <div class="form group">
+                    <div class="col-xs-6 flex-left">
+                        <label>Cape size
+                            <select class="form-control" name="cape size">
+                                <option>Small</option>
+                                <option>Medium</option>
+                                <option>Large</option>
+                                <option>Super-Large</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="col-xs-6 flex-left">
+                        <label>Operating System Choice
+                            <select class="form-control" name="OS of choice">
+                                <option>MAC</option>
+                                <option>LINUX</option>
+                                <option>WINDOWS</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+                <label>Programming Languages  - check all that you know:  
                     <label class="checkbox-inline">
                         <input type="checkbox" name="Python" value="Knows Python">Python 
                     </label> 
@@ -88,60 +96,58 @@
                     <label class="checkbox-inline">    
                         <input type="checkbox" name="C#" value="Knows C#">C#
                     </label>
-                    </div>
-                    </label>
-                    <br>
-                    <br>
+                </label>
+                <div class="form group">
+                    <div class="col-xs-6 flex-left">
                     <label>Your Story
                         <textarea class="form-control" rows="3" name="Bio"></textarea>
                     </label>
-                    <br>
-                    <br>
+                    </div>
+                    <div class="col-xs-6 flex-left">
                     <label>Your Motto
                         <input class="form-control"type="text" name="motto">
                     </label>
-                    <br>
-                    <br>
-                    <label>Arch Enemy?
-                    <br>
-                    <br>
-                        <label class="radio-inline">
-                            <input type="radio" name="Arch Enemey" value="The Joker">The Joker
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <label>Arch Enemy?</label>
+                            <label class="radio-inline">
+                                <input type="radio" name="Arch Enemey" value="The Joker">The Joker
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="Arch Enemey" value="Emperor Zurg">Emperor Zurg
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="Arch Enemey" value="Magneto">Magneto
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="Arch Enemey" value="Lex Luthor">Lex Luthor
+                            </label>
+                        </label>>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <label>Super Pet?
+                            <label class="radio-inline">
+                                <input type="radio" name="Super Pet" value="Hedwig">Hedwig
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="Super Pet" value="Woola">Woola
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="Super Pet" value="Pikachu">Pikachu
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="Super Pet" value="Toothless">Toothless
+                            </label>
                         </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="Arch Enemey" value="Emperor Zurg">Emperor Zurg
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="Arch Enemey" value="Magneto">Magneto
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="Arch Enemey" value="Lex Luthor">Lex Luthor
-                        </label>
-                    </label>
-                    <br>
-                    <br>
-                    <label>Super Pet?
-                    <br>
-                    <br>
-                        <label class="radio-inline">
-                            <input type="radio" name="Super Pet" value="Hedwig">Hedwig
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="Super Pet" value="Woola">Woola
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="Super Pet" value="Pikachu">Pikachu
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="Super Pet" value="Toothless">Toothless
-                        </label>
-                    </label>
-                    <br>
-                    <br>
-                    <input type="submit" class="btn btn-primary">
-                    <input type="reset" class="btn btn-danger">
-                </form>
-            </div>
+                    </div>
+                </div>
+                <input type="submit" class="btn btn-primary hard-center">
+                <input type="reset" class="btn btn-danger hard-center">
+            </form>
         </div>
     </div>
 </body>
