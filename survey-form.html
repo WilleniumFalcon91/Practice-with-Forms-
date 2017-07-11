@@ -14,133 +14,135 @@
                 <div class="col-md-12">
                     <h1>Superhero Application</h1>
                 </div>
-        <form class="form-horizontal" action="http://localhost:5000" enctype="multipart/form-data" method="GET"> 
-            <div class="form group">
-                <label>Name
-                <input type="text" class="form-control" name="name">
-                </label>
+                <form class="form-horizontal" action="http://localhost:5000" enctype="multipart/form-data" method="GET"> 
+                    <div class="form group">
+                        <label>Name
+                        <input type="text" class="form-control" name="name">
+                        </label>
+                    </div>
+                    <div class="form group">
+                        <label>Age
+                        <input type="number" class="form-control" name="age">
+                        </label>
+                    </div>
+                    <br>
+                    <label>Superhero Powers - check all that apply:
+                    <br>
+                        <label class="checkbox-inline">Lightening Speed
+                            <input type="checkbox" name="Lightening Speed" value="Fast"> 
+                        </label> 
+                        <label class="checkbox-inline">Superhuman Strength  
+                            <input type="checkbox" name="Superhuman Strength" value="Strong"> 
+                        </label> 
+                        <label class="checkbox-inline">Ability to Fly  
+                            <input type="checkbox" name="Ability to fly" value="Flight"> 
+                        </label>
+                        <label class="checkbox-inline">Heat Vision    
+                            <input type="checkbox" name="Heat Vision" value="Lasers"> 
+                        </label> 
+                        <label class="checkbox-inline">Invisibility   
+                            <input type="checkbox" name="Invisibility" value="Able to be invisibile"> 
+                        </label>
+                        <label class="checkbox-inline">Teleportation    
+                            <input type="checkbox" name="Teleportation" value="Knows Teleportation"> 
+                        </label>
+                    </label>
+                    <br>
+                    <br>
+                    <label>Cape size
+                        <select class="form-control" name="cape size">
+                            <option>Small</option>
+                            <option>Medium</option>
+                            <option>Large</option>
+                            <option>Super-Large</option>
+                        </select>
+                    </label>
+                    <br>
+                    <br>
+                    <label>Operating System Choice
+                        <select class="form-control" name="OS of choice">
+                            <option>MAC</option>
+                            <option>LINUX</option>
+                            <option>WINDOWS</option>
+                        </select>
+                    </label>
+                    <br>
+                    <br>
+                    <label>Programming Languages  - check all that you know:  
+                    <br>
+                    <label class="checkbox-inline">Python
+                        <input type="checkbox" name="Python" value="Knows Python"> 
+                    </label> 
+                    <label class="checkbox-inline">JavaScript  
+                        <input type="checkbox" name="JavaScript" value="Knows JavaScript"> 
+                    </label> 
+                    <label class="checkbox-inline">PHP  
+                        <input type="checkbox" name="PHP" value="Knows PHP"> 
+                    </label>
+                    <label class="checkbox-inline">Ruby    
+                        <input type="checkbox" name="Ruby" value="Knows Ruby"> 
+                    </label> 
+                    <label class="checkbox-inline">Java   
+                        <input type="checkbox" name="Java" value="Knows Java"> 
+                    </label>
+                    <label class="checkbox-inline">C#    
+                        <input type="checkbox" name="C#" value="Knows C#"> 
+                    </label>
+                    </div>
+                    </label>
+                    <br>
+                    <br>
+                    <label>Tell us about yourself
+                        <textarea class="form-control" rows="3" name="Bio"></textarea>
+                    </label>
+                    <br>
+                    <br>
+                    <label>Your Motto
+                        <input class="form-control"type="text" name="motto">
+                    </label>
+                    <br>
+                    <br>
+                    <label>Arch Enemy?
+                    <br>
+                    <br>
+                        <label class="radio-inline">The Joker
+                            <input type="radio" name="Arch Enemey" value="The Joker">
+                        </label>
+                        <label class="radio-inline">Emperor Zurg
+                            <input type="radio" name="Arch Enemey" value="Emperor Zurg">
+                        </label>
+                        <label class="radio-inline">Magneto
+                            <input type="radio" name="Arch Enemey" value="Magneto">
+                        </label>
+                        <label class="radio-inline">Lex Luthor
+                            <input type="radio" name="Arch Enemey" value="Lex Luthor">
+                        </label>
+                    </label>
+                    <br>
+                    <br>
+                    <label>Super Pet?
+                    <br>
+                    <br>
+                        <label class="radio-inline">Hedwig
+                            <input type="radio" name="Super Pet" value="Hedwig">
+                        </label>
+                        <label class="radio-inline">Woola
+                            <input type="radio" name="Super Pet" value="Woola">
+                        </label>
+                        <label class="radio-inline">Pikachu
+                            <input type="radio" name="Super Pet" value="Pikachu">
+                        </label>
+                        <label class="radio-inline">Toothless
+                            <input type="radio" name="Super Pet" value="Toothless">
+                        </label>
+                    </label>
+                    <br>
+                    <br>
+                    <input type="submit" class="btn btn-primary">
+                    <input type="reset" class="btn btn-danger">
+                </form>
             </div>
-            <div class="form group">
-                <label>Age
-                <input type="number" class="form-control" name="age">
-                </label>
-            </div>
-            <br>
-            <label>Superhero Powers - check all that apply:
-            <br>
-                <label class="checkbox-inline">Lightening Speed
-                    <input type="checkbox" name="Lightening Speed" value="Fast"> 
-                </label> 
-                <label class="checkbox-inline">Superhuman Strength  
-                    <input type="checkbox" name="Superhuman Strength" value="Strong"> 
-                </label> 
-                <label class="checkbox-inline">Ability to Fly  
-                    <input type="checkbox" name="Ability to fly" value="Flight"> 
-                </label>
-                <label class="checkbox-inline">Heat Vision    
-                    <input type="checkbox" name="Heat Vision" value="Lasers"> 
-                </label> 
-                <label class="checkbox-inline">Invisibility   
-                    <input type="checkbox" name="Invisibility" value="Able to be invisibile"> 
-                </label>
-                <label class="checkbox-inline">Teleportation    
-                    <input type="checkbox" name="Teleportation" value="Knows Teleportation"> 
-                </label>
-            </label>
-            <br>
-            <br>
-            <label>Cape size
-                <select class="form-control" name="cape size">
-                    <option>Small</option>
-                    <option>Medium</option>
-                    <option>Large</option>
-                    <option>Super-Large</option>
-                </select>
-            </label>
-            <br>
-            <br>
-            <label>Operating System Choice
-                <select class="form-control" name="OS of choice">
-                    <option>MAC</option>
-                    <option>LINUX</option>
-                    <option>WINDOWS</option>
-                </select>
-            </label>
-            <br>
-            <br>
-            <label>Programming Languages  - check all that you know:  
-            <br>
-            <label class="checkbox-inline">Python
-                <input type="checkbox" name="Python" value="Knows Python"> 
-            </label> 
-            <label class="checkbox-inline">JavaScript  
-                <input type="checkbox" name="JavaScript" value="Knows JavaScript"> 
-            </label> 
-            <label class="checkbox-inline">PHP  
-                <input type="checkbox" name="PHP" value="Knows PHP"> 
-            </label>
-            <label class="checkbox-inline">Ruby    
-                <input type="checkbox" name="Ruby" value="Knows Ruby"> 
-            </label> 
-            <label class="checkbox-inline">Java   
-                <input type="checkbox" name="Java" value="Knows Java"> 
-            </label>
-            <label class="checkbox-inline">C#    
-                <input type="checkbox" name="C#" value="Knows C#"> 
-            </label>
-            </div>
-            </label>
-            <br>
-            <br>
-            <label>Tell us about yourself
-                <textarea class="form-control" rows="3" name="Bio"></textarea>
-            </label>
-            <br>
-            <br>
-            <label>Your Motto
-                <input class="form-control"type="text" name="motto">
-            </label>
-            <br>
-            <br>
-            <label>Arch Enemy?
-            <br>
-            <br>
-                <label class="radio-inline">The Joker
-                    <input type="radio" name="Arch Enemey" value="The Joker">
-                </label>
-                <label class="radio-inline">Emperor Zurg
-                    <input type="radio" name="Arch Enemey" value="Emperor Zurg">
-                </label>
-                <label class="radio-inline">Magneto
-                    <input type="radio" name="Arch Enemey" value="Magneto">
-                </label>
-                <label class="radio-inline">Lex Luthor
-                    <input type="radio" name="Arch Enemey" value="Lex Luthor">
-                </label>
-            </label>
-            <br>
-            <br>
-            <label>Super Pet?
-            <br>
-            <br>
-                <label class="radio-inline">Hedwig
-                    <input type="radio" name="Super Pet" value="Hedwig">
-                </label>
-                <label class="radio-inline">Woola
-                    <input type="radio" name="Super Pet" value="Woola">
-                </label>
-                <label class="radio-inline">Pikachu
-                    <input type="radio" name="Super Pet" value="Pikachu">
-                </label>
-                <label class="radio-inline">Toothless
-                    <input type="radio" name="Super Pet" value="Toothless">
-                </label>
-            </label>
-            <br>
-            <br>
-            <input type="submit" class="btn btn-primary">
-            <input type="reset" class="btn btn-danger">
-        </form>
+        </div>
     </div>
 </body>
 </html>
